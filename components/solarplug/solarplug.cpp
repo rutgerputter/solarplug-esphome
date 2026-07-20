@@ -543,7 +543,7 @@ bool SolarPlugComponent::is_allowed_command_(const std::string &command) {
 
 bool SolarPlugComponent::is_known_passive_label_(const std::string &command) {
   return is_allowed_command_(command) || command == "PCP00" || command == "PCP01" || command == "PCP02" || command == "PCP03" ||
-         command == "POP00" || command == "POP01" || command == "POP02" || command == "PVENGUSE00" ||
+         command == "POP00" || command == "POP01" || command == "POP02" || command == "POP03" || command == "PVENGUSE00" ||
          command == "PVENGUSE01" || command == "PVENGUSE02";
 }
 
