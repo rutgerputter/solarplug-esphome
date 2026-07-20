@@ -254,7 +254,7 @@ FieldList decode_hbat(const std::vector<std::string> &tokens) {
       add_field(fields, "battery_type", "PYL", nullptr, "high");
     if (tokens[0] == "02")
       add_field(fields, "battery_type", "USE", nullptr, "high");
-    } else {
+    else {
       add_field(fields, "battery_type", tokens[0], nullptr, "medium");
     }
   }
