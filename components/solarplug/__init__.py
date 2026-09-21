@@ -140,7 +140,7 @@ WRITE_NUMBERS = {
     "restore_second_output_delay_time": ("restore_second_output_delay_time", "min", None, 0.0, 60.0, 5.0),
     "bms_lock_machine_battery_capacity": ("bms_lock_machine_battery_capacity", UNIT_PERCENT, DEVICE_CLASS_BATTERY, 0.0, 20.0, 1.0),
     "grid_connected_current": ("grid_connected_current", UNIT_AMPERE, DEVICE_CLASS_CURRENT, 0.0, 150.0, 1.0),
-    "maximum_mains_charging_current": ("maximum_mains_charging_current", UNIT_AMPERE, DEVICE_CLASS_CURRENT, 0.0, 60.0, 10.0),
+    "maximum_mains_charging_current": ("maximum_mains_charging_current", UNIT_AMPERE, DEVICE_CLASS_CURRENT, 2.0, 60.0, 10.0),
     "maximum_charging_current": ("maximum_charging_current", UNIT_AMPERE, DEVICE_CLASS_CURRENT, 10.0, 120.0, 10.0),
 }
 
