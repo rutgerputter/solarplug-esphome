@@ -250,8 +250,8 @@ FieldList decode_hbat(const std::vector<std::string> &tokens) {
   fields.reserve(8);
   if (!tokens.empty()) {
     add_field(fields, "battery_type_code", tokens[0], nullptr, "high");
-    if (tokens[0] == "04")
-      add_field(fields, "battery_type", "PYL", nullptr, "high");
+    if (tokens[0] == "03")
+      add_field(fields, "battery_type", "LifePo", nullptr, "high");
     if (tokens[0] == "02")
       add_field(fields, "battery_type", "USE", nullptr, "high");
     else {
@@ -709,27 +709,9 @@ bool SolarPlugComponent::send_write_select(const std::string &key, const std::st
     if (value == "USE") {
       return this->queue_write_frame_("Battery Type Setting", "PBT02", FrameStyle::CRC_XMODEM_CR);
     }    
-    if (value == "LIA") {
+    if (value == "LifePo") {
       return this->queue_write_frame_("Battery Type Setting", "PBT03", FrameStyle::CRC_XMODEM_CR);
     }
-    if (value == "PYL") {
-      return this->queue_write_frame_("Battery Type Setting", "PBT04", FrameStyle::CRC_XMODEM_CR);
-    }
-    if (value == "TQF") {
-      return this->queue_write_frame_("Battery Type Setting", "PBT05", FrameStyle::CRC_XMODEM_CR);
-    }
-    if (value == "GRO") {
-      return this->queue_write_frame_("Battery Type Setting", "PBT06", FrameStyle::CRC_XMODEM_CR);
-    }
-    if (value == "FEL") {
-      return this->queue_write_frame_("Battery Type Setting", "PBT07", FrameStyle::CRC_XMODEM_CR);
-    }
-    if (value == "LIB") {
-      return this->queue_write_frame_("Battery Type Setting", "PBT08", FrameStyle::CRC_XMODEM_CR);
-    }
-    if (value == "LIC") {
-      return this->queue_write_frame_("Battery Type Setting", "PBT09", FrameStyle::CRC_XMODEM_CR);
-    }    
   }
   ESP_LOGW(TAG, "unknown write select key=%s value=%s", key.c_str(), value.c_str());
   return false;
