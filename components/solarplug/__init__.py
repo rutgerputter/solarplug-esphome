@@ -154,7 +154,7 @@ WRITE_SELECTS = {
     "charger_priority": ("CSO", "SNU", "OSO", "SOR"),
     "output_source_priority": ("SUB priority", "SBU priority", "Utility first (legacy)", "PEC Mode (CT)"),
     "pv_energy_feeding_priority": ("BLU", "LBU"),
-    "battery_type": ("AGM", "USE", "LIA", "PYL", "TQF", "GRO", "FEL", "LIB", "LIc"),
+    "battery_type": ("AGM", "USE", "LifePo"),
 }
 
 
