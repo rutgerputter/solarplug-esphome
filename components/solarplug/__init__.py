@@ -127,15 +127,15 @@ WRITE_SWITCHES = {
 }
 
 WRITE_NUMBERS = {
-    "battery_equalization_voltage": ("battery_equalization_voltage", UNIT_VOLT, DEVICE_CLASS_VOLTAGE, 48.0, 60.0, 0.1),
+    "battery_equalization_voltage": ("battery_equalization_voltage", UNIT_VOLT, DEVICE_CLASS_VOLTAGE, 24.0, 30.0, 0.1),
     "battery_equalization_interval": ("battery_equalization_interval", "day", None, 0.0, 90.0, 1.0),
     "battery_equalization_timeout": ("battery_equalization_timeout", "min", None, 5.0, 900.0, 5.0),
     "battery_equalization_time": ("battery_equalization_time", "min", None, 5.0, 900.0, 5.0),
-    "battery_cut_off_voltage": ("battery_cut_off_voltage", UNIT_VOLT, DEVICE_CLASS_VOLTAGE, 40.0, 60.0, 0.1),
-    "battery_bulk_voltage": ("battery_bulk_voltage", UNIT_VOLT, DEVICE_CLASS_VOLTAGE, 48.0, 58.4, 0.1),
-    "battery_recharge_voltage": ("battery_recharge_voltage", UNIT_VOLT, DEVICE_CLASS_VOLTAGE, 44.0, 51.0, 1.0),
-    "battery_redischarge_voltage": ("battery_redischarge_voltage", UNIT_VOLT, DEVICE_CLASS_VOLTAGE, 0.0, 58.0, 1.0),
-    "battery_float_voltage": ("battery_float_voltage", UNIT_VOLT, DEVICE_CLASS_VOLTAGE, 48.0, 58.4, 0.1),
+    "battery_cut_off_voltage": ("battery_cut_off_voltage", UNIT_VOLT, DEVICE_CLASS_VOLTAGE, 20.0, 26.0, 0.1),
+    "battery_bulk_voltage": ("battery_bulk_voltage", UNIT_VOLT, DEVICE_CLASS_VOLTAGE, 24.0, 30, 0.1),
+    "battery_recharge_voltage": ("battery_recharge_voltage", UNIT_VOLT, DEVICE_CLASS_VOLTAGE, 22.0, 26.0, 1.0),
+    "battery_redischarge_voltage": ("battery_redischarge_voltage", UNIT_VOLT, DEVICE_CLASS_VOLTAGE, 0.0, 29.0, 1.0),
+    "battery_float_voltage": ("battery_float_voltage", UNIT_VOLT, DEVICE_CLASS_VOLTAGE, 24.0, 29.0, 0.1),
     "restore_second_output_battery_capacity": ("restore_second_output_battery_capacity", UNIT_PERCENT, DEVICE_CLASS_BATTERY, 0.0, 50.0, 1.0),
     "restore_second_output_delay_time": ("restore_second_output_delay_time", "min", None, 0.0, 60.0, 5.0),
     "bms_lock_machine_battery_capacity": ("bms_lock_machine_battery_capacity", UNIT_PERCENT, DEVICE_CLASS_BATTERY, 0.0, 20.0, 1.0),
